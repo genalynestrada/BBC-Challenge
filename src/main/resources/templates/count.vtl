@@ -1,0 +1,19 @@
+#set ($map = $hashmap.keySet() )
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+        <tr>
+            <th>Candidate</th>
+            <th>Count</th>
+         </tr>
+     </thead>
+     <tbody>
+        #foreach( $key in $map )
+          <tr>
+            <td>$key</td>
+            <td>$hashmap.get($key)</td>
+          </tr>
+        #end
+     </tbody>
+  </table>
+</div>
